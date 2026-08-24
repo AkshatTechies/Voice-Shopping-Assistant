@@ -1,0 +1,25 @@
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.6
+sqlalchemy>=2.0.35
+pydantic>=2.9.2
+python-dotenv>=1.0.1
+python-multipart>=0.0.9
+
+# Added in later phases:
+# openai-whisper       -> Phase 3 (STT)
+# anthropic / openai   -> Phase 4 (LLM intent parsing)
+# chromadb             -> Phase 5 (vector search)
+# Add these to your existing backend/requirements.txt
+
+openai-whisper>=20231117
+python-multipart>=0.0.9
+
+# Added for auth/profile (Phase: accounts)
+bcrypt>=4.2.0
+python-jose[cryptography]>=3.3.0
+
+# Added for voice intent parsing (Phase 4) and vector substitutes (Phase 5)
+# these were missing from this file — app crashes on startup without them
+groq>=0.11.0
+chromadb>=0.5.5
+sentence-transformers>=3.1.1

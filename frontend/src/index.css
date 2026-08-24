@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+/*
+  Design tokens for the "Kirana Voice" visual identity — warm green/
+  orange grocery-app palette, serif headings + sans body. Applied to
+  the real shopping-list app (not a product-catalog storefront), so
+  these tokens back real components (cards, pills, header, forms)
+  rather than a cart/checkout flow this app doesn't have.
+*/
+@theme {
+  --color-bg: #F3F6F1;
+  --color-card: #FFFFFF;
+  --color-ink: #16241C;
+  --color-ink-soft: #5B6B60;
+  --color-brand: #1F4B3A;
+  --color-brand-dark: #153224;
+  --color-accent: #FF6B4A;
+  --color-accent-soft: #FFE7DF;
+  --color-border: #E1E8DE;
+  --color-gold: #E8A33D;
+
+  --font-serif: "Fraunces", ui-serif, Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  @apply bg-bg text-ink font-sans;
+}
